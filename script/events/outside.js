@@ -54,7 +54,7 @@ Events.Outside = [
 				reward: {
 					fur: 100,
 					meat: 100,
-					teeth: 10
+					teeth: 100
 				},
 				buttons: {
 					'end': {
@@ -80,7 +80,7 @@ Events.Outside = [
 				notification: _('a fire has started'),
 				blink: true,
 				onLoad: function() {
-					Outside.destroyHuts(1);
+					Outside.destroyHuts(0);
 				},
 				buttons: {
 					'mourn': {

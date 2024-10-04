@@ -406,7 +406,7 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'scales': 50, 'teeth': 30
+					'scales': 0, 'teeth': 0
 				};
 			},
 			audio: AudioLibrary.BUY_MEDICINE
@@ -415,7 +415,7 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'scales': 10
+					'scales': 0
 				};
 			},
 			audio: AudioLibrary.BUY_BULLETS
@@ -434,7 +434,7 @@ var Room = {
 			type: 'weapon',
 			cost: function () {
 				return {
-					'teeth': 10
+					'teeth': 0
 				};
 			},
 			audio: AudioLibrary.BUY_BOLAS
@@ -443,8 +443,8 @@ var Room = {
 			type: 'weapon',
 			cost: function () {
 				return {
-					'scales': 100,
-					'teeth': 50
+					'scales': 0,
+					'teeth': 0
 				};
 			},
 			audio: AudioLibrary.BUY_GRENADES
@@ -453,8 +453,8 @@ var Room = {
 			type: 'weapon',
 			cost: function () {
 				return {
-					'scales': 500,
-					'teeth': 250
+					'scales': 0,
+					'teeth': 0
 				};
 			},
 			audio: AudioLibrary.BUY_BAYONET
@@ -475,9 +475,9 @@ var Room = {
 			maximum: 1,
 			cost: function () {
 				return {
-					fur: 400,
-					scales: 20,
-					teeth: 10
+					fur: 0,
+					scales: 0,
+					teeth: 0
 				};
 			},
 			audio: AudioLibrary.BUY_COMPASS

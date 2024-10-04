@@ -36,7 +36,7 @@ var World = {
   MEAT_HEAL: 8,
   MEDS_HEAL: 20,
   HYPO_HEAL: 30,
-  FIGHT_DELAY: 3, // At least three moves between fights
+  FIGHT_DELAY: 5, // At least three moves between fights
   NORTH: [ 0, -1],
   SOUTH: [ 0,  1],
   WEST:  [-1,  0],
@@ -52,8 +52,8 @@ var World = {
     'bone spear': {
       verb: _('stab'),
       type: 'melee',
-      damage: 2,
-      cooldown: 2
+      damage: 20,
+      cooldown: 0.5
     },
     'iron sword': {
       verb: _('swing'),
@@ -98,8 +98,8 @@ var World = {
       verb: _('tangle'),
       type: 'ranged',
       damage: 'stun',
-      cooldown: 15,
-      cost: { 'bolas': 1 }
+      cooldown: 0,
+      cost: { 'bolas': 0 }
     },
     'plasma rifle': {
       verb: _('disintigrate'),
@@ -138,8 +138,8 @@ var World = {
     // Setpiece definitions
     World.LANDMARKS[World.TILE.OUTPOST] = { num: 0, minRadius: 0, maxRadius: 0, scene: 'outpost', label: _('An&nbsp;Outpost') };
     World.LANDMARKS[World.TILE.IRON_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: 'ironmine', label:  _('Iron&nbsp;Mine') };
-    World.LANDMARKS[World.TILE.COAL_MINE] = { num: 1, minRadius: 10, maxRadius: 10, scene: 'coalmine', label:  _('Coal&nbsp;Mine') };
-    World.LANDMARKS[World.TILE.SULPHUR_MINE] = { num: 1, minRadius: 20, maxRadius: 20, scene: 'sulphurmine', label:  _('Sulphur&nbsp;Mine') };
+    World.LANDMARKS[World.TILE.COAL_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: 'coalmine', label:  _('Coal&nbsp;Mine') };
+    World.LANDMARKS[World.TILE.SULPHUR_MINE] = { num: 1, minRadius: 5, maxRadius: 5, scene: 'sulphurmine', label:  _('Sulphur&nbsp;Mine') };
     World.LANDMARKS[World.TILE.HOUSE] = { num: 10, minRadius: 0, maxRadius: World.RADIUS * 1.5, scene: 'house', label:  _('An&nbsp;Old&nbsp;House') };
     World.LANDMARKS[World.TILE.CAVE] = { num: 5, minRadius: 3, maxRadius: 10, scene: 'cave', label:  _('A&nbsp;Damp&nbsp;Cave') };
     World.LANDMARKS[World.TILE.TOWN] = { num: 10, minRadius: 10, maxRadius: 20, scene: 'town', label:  _('An&nbsp;Abandoned&nbsp;Town') };

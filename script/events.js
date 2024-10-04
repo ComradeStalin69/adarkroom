@@ -310,7 +310,7 @@ var Events = {
 			text: _('use meds'),
 			cooldown: cooldown,
 			click: Events.useMeds,
-			cost: { 'medicine': 1 }
+			cost: { 'medicine': 0 }
 		});
 
 		if((Path.outfit['medicine'] || 0) === 0) {

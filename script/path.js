@@ -1,5 +1,5 @@
 var Path = {
-	DEFAULT_BAG_SPACE: 10,
+	DEFAULT_BAG_SPACE: 100,
 	_STORES_OFFSET: 0,
 	// Everything not in this list weighs 1
 	Weight: {
@@ -71,13 +71,13 @@ var Path = {
 	
 	getCapacity: function() {
 		if($SM.get('stores["cargo drone"]', true) > 0) {
-			return Path.DEFAULT_BAG_SPACE + 100;
+			return Path.DEFAULT_BAG_SPACE + 1000;
 		} else if($SM.get('stores.convoy', true) > 0) {
-			return Path.DEFAULT_BAG_SPACE + 60;
+			return Path.DEFAULT_BAG_SPACE + 600;
 		} else if($SM.get('stores.wagon', true) > 0) {
-			return Path.DEFAULT_BAG_SPACE + 30;
+			return Path.DEFAULT_BAG_SPACE + 300;
 		} else if($SM.get('stores.rucksack', true) > 0) {
-			return Path.DEFAULT_BAG_SPACE + 10;
+			return Path.DEFAULT_BAG_SPACE + 100;
 		}
 		return Path.DEFAULT_BAG_SPACE;
 	},
@@ -134,7 +134,7 @@ var Path = {
 		
 		// Add the armour row
 		var armour = _("none");
-    if($SM.get('stores["kinetic armour"]', true) > 0)
+    if($SM.get('stores["kinetic armour"]', true) > -1)
 			armour = _("kinetic");
 		else if($SM.get('stores["s armour"]', true) > 0)
 			armour = _("steel");

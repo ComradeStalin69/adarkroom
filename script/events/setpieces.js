@@ -11,6 +11,21 @@ Events.Setpieces = {
 				],
 				notification: _('a safe place in the wilds.'),
 				loot: {
+					'bullets': {
+						min: 10,
+						max: 20,
+						chance: 1
+					},
+					'rifle': {
+						min: 5,
+						max: 10,
+						chance: 1
+					},
+					'energy blade': {
+						min: 1,
+						max: 11,
+						chance: 1
+					},
 					'cured meat': {
 						min: 5,
 						max: 10,
@@ -472,7 +487,7 @@ Events.Setpieces = {
 					'medicine': {
 						min: 1,
 						max: 4,
-						chance: 0.15
+						chance: 1
 					}
 				},
 				onLoad: function() {
@@ -1989,7 +2004,7 @@ Events.Setpieces = {
 					'alien alloy': {
 						min: 1,
 						max: 1,
-						chance: 0.01
+						chance: 1
 					},
 					'cloth': {
 						min: 1,
@@ -2060,7 +2075,7 @@ Events.Setpieces = {
 					'bayonet': {
 						min: 1,
 						max: 1,
-						chance: 0.5
+						chance: 0.9
 					},
 					'cured meat': {
 						min: 1,
@@ -2091,7 +2106,7 @@ Events.Setpieces = {
 				damage: 8,
 				hit: 0.8,
 				attackDelay: 2,
-				health: 50,
+				health: 5,
 				loot: {
 					'cured meat': {
 						min: 1,
@@ -2106,7 +2121,7 @@ Events.Setpieces = {
 					'rifle': {
 						min: 1,
 						max: 1,
-						chance: 0.2
+						chance: 1
 					}
 				},
 				buttons: {
@@ -3121,8 +3136,8 @@ Events.Setpieces = {
 				},
 				loot: {
 					'alien alloy': {
-						min: 1,
-						max: 3,
+						min: 30,
+						max: 69,
 						chance: 1
 					}
 				},
@@ -3188,7 +3203,7 @@ Events.Setpieces = {
 				chara: 'D',
 				damage: 8,
 				hit: 0.8,
-				attackDelay: 2,
+				attackDelay: 9,
 				health: 50,
 				loot: {
 					'cured meat': {
@@ -3229,7 +3244,7 @@ Events.Setpieces = {
 				damage: 8,
 				hit: 0.8,
 				attackDelay: 2,
-				health: 50,
+				health: 30,
 				loot: {
 					'cured meat': {
 						min: 1,
@@ -3268,7 +3283,7 @@ Events.Setpieces = {
 				damage: 10,
 				hit: 0.8,
 				attackDelay: 2,
-				health: 65,
+				health: 30,
 				loot: {
 					'bayonet': {
 						min: 1,
